@@ -8,10 +8,10 @@ A responsive front-end website concept for the SMIU Student Affairs Office. Stud
 
 | Name              | Roll number | GitHub username | Main responsibility                        |
 | ----------------- | ----------- | --------------- | ------------------------------------------ |
-| Abdul Rehman      | BSE-24S-077 | abdulrehman7876 | Repository setup, shared styles, Home page |
-| Abdul Ahad Haider | BSE-24S-081 | Abdull-ahad     | Events and Event Details pages             |
-| Hassan Abbas      | BSE-24S-070 | AbbasMatrixs    | Societies and Registration pages           |
-| Mohsin Ali        | BSE-24S-052 | Mohsin1492      | Contact page, README and final testing     |
+| Abdul Rehman      | SE01 | abdulrehman7876 | Repository setup, shared styles, Home page |
+| Abdul Ahad Haider | SE04 | Abdull-ahad     | Events and Event Details pages             |
+| Hassan Abbas      | SE03 | AbbasMatrixs    | Societies and Registration pages           |
+| Mohsin Ali        | SE02 | Mohsin1492      | Contact page, README and final testing     |
 
 ## Page ownership
 
