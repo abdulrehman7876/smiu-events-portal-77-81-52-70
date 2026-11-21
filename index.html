@@ -1,11 +1,512 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Discover SMIU campus events, student societies, workshops and activities in one place."
+    />
+    <meta name="theme-color" content="#102a43" />
+    <title>Discover campus life | SMIU Events Portal</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark portal-navbar">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center gap-2"
+            href="index.html"
+            aria-label="SMIU Events Portal home"
+          >
+            <span class="brand-mark">
+              <img
+                class="rounded"
+                src="/images/smiuLogo.png"
+                alt="SMIU logo"
+                width="30"
+                height="30"
+              />
+            </span>
+            <span class="brand-copy">SMIU <span>EVENTS PORTAL</span></span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavigation"
+            aria-controls="mainNavigation"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html" aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="societies.html">Societies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item ms-lg-2">
+                <a class="btn btn-nav-cta" href="register.html"
+                  >Join an event
+                  <i class="bi bi-arrow-up-right" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="home-hero">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative hero-content">
+          <div class="row align-items-center min-vh-hero g-5">
+            <div class="col-lg-7">
+              <span class="eyebrow eyebrow-light"
+                ><span class="eyebrow-dot"></span> Student life starts
+                here</span
+              >
+              <h1 class="display-3 fw-bold text-white mt-3">
+                Your campus.<br /><span class="text-highlight"
+                  >Your moment.</span
+                >
+              </h1>
+              <p class="hero-lead mt-3">
+                Find the events, people and communities that make university
+                more than a classroom.
+              </p>
+              <div class="d-flex flex-wrap gap-3 mt-4">
+                <a class="btn btn-primary btn-lg" href="events.html"
+                  >Explore events
+                  <i class="bi bi-arrow-up-right ms-1" aria-hidden="true"></i
+                ></a>
+                <a class="btn btn-outline-light btn-lg" href="societies.html"
+                  >Find your society</a
+                >
+              </div>
+              <div class="hero-proof mt-5">
+                <div><strong>01</strong><span>Discover</span></div>
+                <div><strong>02</strong><span>Connect</span></div>
+                <div><strong>03</strong><span>Take part</span></div>
+              </div>
+            </div>
+            <div class="col-lg-5 d-none d-lg-block">
+              <div class="hero-side-card">
+                <div class="hero-side-top">
+                  <span class="live-dot"></span> CAMPUS HIGHLIGHT
+                  <span class="ms-auto">NOV ’26</span>
+                </div>
+                <img
+                  src="images/culture-fest.svg"
+                  alt="Illustration of a student cultural festival with stage lights and people"
+                  class="img-fluid rounded-4"
+                />
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div>
+                    <span class="small-label">FEATURED EXPERIENCE</span>
+                    <h2 class="h5 text-white mb-0 mt-1">
+                      Culture &amp; Connections
+                    </h2>
+                  </div>
+                  <a
+                    class="round-arrow"
+                    href="event-details.html"
+                    aria-label="View featured event details"
+                    ><i class="bi bi-arrow-up-right" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad bg-soft">
+        <div class="container">
+          <div
+            class="section-heading d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3"
+          >
+            <div>
+              <span class="eyebrow">On the campus calendar</span>
+              <h2 class="section-title">Featured events</h2>
+              <p class="section-subtitle">
+                A few good reasons to step out and get involved.
+              </p>
+            </div>
+            <a class="text-link" href="events.html"
+              >View all events
+              <i class="bi bi-arrow-right" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div
+            id="featuredEvents"
+            class="carousel slide featured-carousel mt-4"
+            data-bs-ride="carousel"
+            data-bs-interval="5000"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#featuredEvents"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#featuredEvents"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#featuredEvents"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner rounded-4 overflow-hidden">
+              <div class="carousel-item active">
+                <div class="feature-slide feature-slide-one">
+                  <img
+                    src="images/codefest.svg"
+                    alt="Illustration of a coding competition with a laptop and code symbols"
+                  />
+                  <div class="feature-slide-content">
+                    <span class="badge text-bg-light">TECHNOLOGY</span>
+                    <p class="slide-date mt-3">21 NOVEMBER 2026 · 10:00 AM</p>
+                    <h3>CodeSprint 2026</h3>
+                    <p>
+                      Build something useful, learn from peers and test your
+                      problem-solving skills.
+                    </p>
+                    <a class="btn btn-light" href="event-details.html"
+                      >Explore event
+                      <i
+                        class="bi bi-arrow-up-right ms-1"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="feature-slide feature-slide-two">
+                  <img
+                    src="images/career-fair.svg"
+                    alt="Illustration of a career fair with students and presentation booths"
+                  />
+                  <div class="feature-slide-content">
+                    <span class="badge text-bg-light">CAREER</span>
+                    <p class="slide-date mt-3">24 NOVEMBER 2026 · 11:00 AM</p>
+                    <h3>Future Forward</h3>
+                    <p>
+                      Meet industry guests, ask better questions and explore
+                      career paths.
+                    </p>
+                    <a class="btn btn-light" href="event-details.html"
+                      >Explore event
+                      <i
+                        class="bi bi-arrow-up-right ms-1"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="feature-slide feature-slide-three">
+                  <img
+                    src="images/culture-fest.svg"
+                    alt="Illustration of a campus cultural night with colorful stage lighting"
+                  />
+                  <div class="feature-slide-content">
+                    <span class="badge text-bg-light">CULTURE</span>
+                    <p class="slide-date mt-3">28 NOVEMBER 2026 · 05:00 PM</p>
+                    <h3>Culture &amp; Connections</h3>
+                    <p>
+                      An evening for music, food, creativity and the many
+                      stories on campus.
+                    </p>
+                    <a class="btn btn-light" href="event-details.html"
+                      >Explore event
+                      <i
+                        class="bi bi-arrow-up-right ms-1"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#featuredEvents"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span
+              ><span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#featuredEvents"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span
+              ><span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad">
+        <div class="container">
+          <div
+            class="section-heading d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3"
+          >
+            <div>
+              <span class="eyebrow">Save your seat</span>
+              <h2 class="section-title">Upcoming events</h2>
+              <p class="section-subtitle">
+                Pick something that interests you and make time for it.
+              </p>
+            </div>
+            <a class="text-link" href="events.html"
+              >Browse the calendar
+              <i class="bi bi-arrow-right" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div class="row g-4 mt-2">
+            <div class="col-md-6 col-lg-4">
+              <article class="event-card h-100">
+                <div class="event-image-wrap">
+                  <img
+                    src="images/codefest.svg"
+                    alt="Illustrated artwork for CodeSprint coding competition"
+                  /><span class="date-tile"
+                    ><strong>21</strong><small>NOV</small></span
+                  >
+                </div>
+                <div class="p-4">
+                  <div class="d-flex gap-2 flex-wrap mb-3">
+                    <span class="category-badge">Technology</span
+                    ><span class="text-muted small">10:00 AM</span>
+                  </div>
+                  <h3 class="h5">CodeSprint 2026</h3>
+                  <p class="card-copy">
+                    A one-day coding challenge for curious builders and problem
+                    solvers.
+                  </p>
+                  <a class="text-link" href="event-details.html"
+                    >View details
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="event-card h-100">
+                <div class="event-image-wrap">
+                  <img
+                    src="images/debate.svg"
+                    alt="Illustration of two microphones for a student debate"
+                  /><span class="date-tile"
+                    ><strong>23</strong><small>NOV</small></span
+                  >
+                </div>
+                <div class="p-4">
+                  <div class="d-flex gap-2 flex-wrap mb-3">
+                    <span class="category-badge">Competition</span
+                    ><span class="text-muted small">12:00 PM</span>
+                  </div>
+                  <h3 class="h5">Voices of SMIU</h3>
+                  <p class="card-copy">
+                    Bring your strongest arguments to an open student debate.
+                  </p>
+                  <a class="text-link" href="event-details.html"
+                    >View details
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="event-card h-100">
+                <div class="event-image-wrap">
+                  <img
+                    src="images/career-fair.svg"
+                    alt="Illustrated artwork for a student career fair"
+                  /><span class="date-tile"
+                    ><strong>24</strong><small>NOV</small></span
+                  >
+                </div>
+                <div class="p-4">
+                  <div class="d-flex gap-2 flex-wrap mb-3">
+                    <span class="category-badge">Career</span
+                    ><span class="text-muted small">11:00 AM</span>
+                  </div>
+                  <h3 class="h5">Future Forward</h3>
+                  <p class="card-copy">
+                    Talk with professionals and explore internship and career
+                    options.
+                  </p>
+                  <a class="text-link" href="event-details.html"
+                    >View details
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad bg-navy text-white">
+        <div class="container">
+          <div class="text-center mx-auto section-intro">
+            <span class="eyebrow eyebrow-light">More than attendance</span>
+            <h2 class="section-title text-white">Why join in?</h2>
+            <p class="section-subtitle text-white-50">
+              University is a chance to build skills, meet people and try
+              something outside your routine.
+            </p>
+          </div>
+          <div class="row g-4 mt-3">
+            <div class="col-md-4">
+              <div class="why-card h-100">
+                <span class="why-icon"
+                  ><i class="bi bi-people" aria-hidden="true"></i
+                ></span>
+                <h3>Find your people</h3>
+                <p>
+                  Meet students who share your interests and make new
+                  connections across departments.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="why-card h-100">
+                <span class="why-icon"
+                  ><i class="bi bi-lightbulb" aria-hidden="true"></i
+                ></span>
+                <h3>Learn by doing</h3>
+                <p>
+                  Practice leadership, teamwork and creative thinking in real
+                  activities.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="why-card h-100">
+                <span class="why-icon"
+                  ><i class="bi bi-stars" aria-hidden="true"></i
+                ></span>
+                <h3>Make it count</h3>
+                <p>
+                  Build memories and experiences that go beyond your academic
+                  timetable.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-5">
+            <a class="btn btn-primary btn-lg" href="societies.html"
+              >Explore student societies
+              <i class="bi bi-arrow-up-right ms-1" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="portal-footer">
+      <div class="container py-5">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <a class="footer-brand" href="index.html"
+              ><span class="brand-mark"
+                ><img
+                  class="rounded"
+                  src="/images/smiuLogo.png"
+                  alt="SMIU logo"
+                  width="30"
+                  height="30"
+              /></span>
+              SMIU Events Portal</a
+            >
+            <p class="footer-copy mt-3 mb-0">
+              A student-focused front-end portal concept for discovering campus
+              events, connecting with societies and taking part in university
+              life.
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h2 class="footer-heading">Explore</h2>
+            <a href="events.html">All events</a>
+            <a href="societies.html">Societies</a>
+            <a href="register.html">Registration</a>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h2 class="footer-heading">Portal</h2>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="event-details.html">Featured event</a>
+          </div>
+          <div class="col-lg-3">
+            <h2 class="footer-heading">Student Affairs</h2>
+            <p class="footer-copy mb-2">SMIU campus, Karachi, Pakistan</p>
+            <a href="mailto:studentaffairs@smiu.edu.pk"
+              >studentaffairs@smiu.edu.pk</a
+            >
+          </div>
+        </div>
+        <div
+          class="footer-bottom mt-4 pt-4 d-flex flex-column flex-md-row justify-content-between gap-2"
+        >
+          <span
+            >© <span data-current-year>2026</span> SMIU Events Portal — Academic
+            front-end project.</span
+          >
+          <span>Built with Bootstrap 5.3.3</span>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
